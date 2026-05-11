@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portefolio Laurent DUONG</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <link rel="stylesheet" href="assets/css/aPropos.css">
+    <title>À Propos - Laurent DUONG</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -18,81 +18,56 @@
             </div>
             <ul class="nav-links">
                <li><a href="index.html">Accueil</a></li>
-               <li><a href="work.html">Projet</a></li>
-               <li><a href="aPropos.html">A Propos</a></li>
+               <li><a href="work.html">Projets</a></li>
+               <li><a href="aPropos.html" class="active">A Propos</a></li>
                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <a href="assets/docs/LaurentCV.pdf" download="CV_Laurent_DUONG.pdf" class="btn-cta">Mon CV</a>
+            <a href="assets/docs/LaurentCV.pdf" download class="btn-cta">Mon CV</a>
         </div>
     </nav>
 
-    <main class="about-container">
-    <section class="about-hero">
-        <div class="about-grid">
+    <main class="container">
+        <section class="about-hero">
+            <h1>Développeur & <span class="muted">Technicien Helpdesk</span></h1>
+        </section>
+
+        <section class="about-content">
             <div class="about-text">
-                <span class="badge">Qui suis-je ?</span>
-                <h1>Passionné par le <span class="muted">Design & le Code.</span></h1>
-                <p>
-                    Actuellement étudiant en [Nom de ta formation], je me spécialise dans la création d'interfaces numériques qui allient esthétique et performance.
-                </p>
-                <p>
-                    Mon objectif est de transformer des idées complexes en expériences utilisateurs fluides. Je suis curieux de nature et j'apprends constamment de nouvelles technologies pour repousser mes limites.
-                </p>
-                <div class="about-stats">
-                    <div class="stat">
-                        <span class="number">2+</span>
-                        <span class="label">Années d'études</span>
-                    </div>
-                    <div class="stat">
-                        <span class="number">15+</span>
-                        <span class="label">Projets réalisés</span>
-                    </div>
-                </div>
-            </div>
-            <div class="about-image">
-                <div class="photo-frame">
-                    <img src="https://via.placeholder.com/500x600" alt="Laurent DUONG">
-                </div>
-            </div>
-        </div>
-    </section>
+                <h2>Moi, c'est Laurent.</h2>
+                <p>Actuellement en <strong>BTS SIO option SLAM</strong> (Solutions Logicielles et Applications Métiers) en alternance chez <strong>Interfor Amiens</strong>, je me passionne pour le développement logiciel et l'infrastructure informatique.</p>
+                
+                <p>Mon parcours est marqué par une forte curiosité technique : de l'initiation intensive au langage C lors de la "Piscine" d'<strong>Epitech</strong> à une licence en Sciences Pour l'Ingénieur à l'<strong>UPJV</strong>, j'ai acquis une base solide en algorithmique et en résolution de problèmes complexes.</p>
 
-    <hr class="separator">
-
-    <section class="about-details">
-        <div class="details-grid">
-            <div class="experience">
-                <h2>Mon Parcours</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="date">2024 - Présent</span>
-                        <h3>Master / Licence en Design Digital</h3>
-                        <p>École [Nom de ton école] - Spécialisation UI/UX.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="date">2022 - 2024</span>
-                        <h3>BTS / BUT Informatique</h3>
-                        <p>Apprentissage des bases du développement web et de l'algorithmie.</p>
-                    </div>
-                </div>
+                <p>Aujourd'hui, je combine mes études avec une expérience concrète en tant que <strong>Technicien Helpdesk chez Tenexa (Autodistribution)</strong>, où je gère l'administration système (Active Directory, O365) et le support utilisateur.</p>
             </div>
 
-            <div class="skills">
-                <h2>Mes Outils</h2>
-                <div class="skills-tags">
-                    <span>Figma</span>
-                    <span>Adobe Creative Suite</span>
-                    <span>HTML / CSS / JS</span>
-                    <span>React</span>
-                    <span>Tailwind CSS</span>
-                    <span>Framer</span>
-                    <span>Git</span>
+            <div class="timeline">
+                <h2>Formation & Expérience</h2>
+                
+                <div class="timeline-item">
+                    <span class="date">2024 - 2026</span>
+                    <h3>Alternance Technicien Helpdesk</h3>
+                    <p>Tenexa Amiens Autodistribution — Diagnostic, résolution d'incidents et administration Active Directory/Office 365.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="date">2024 - 2026</span>
+                    <h3>BTS SIO Option SLAM</h3>
+                    <p>Interfor Amiens — Formation en développement d'applications et cybersécurité.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="date">2022 - 2023</span>
+                    <h3>Piscine C / Initiation</h3>
+                    <p>Epitech — Apprentissage intensif du langage C et des fondamentaux de l'informatique.</p>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
-    <script src="/assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
