@@ -292,15 +292,20 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
     gap: 15px;
 }
 
+/* Styles pour le bouton CV dans la navbar */
 .btn-cta {
-    text-decoration: none; /* Enlève le soulignement */
-    display: inline-block; /* Permet de bien gérer les marges internes (padding) */
-    color: white;          /* Assure-toi que la couleur du texte est correcte */
-    /* Garde tes autres propriétés existantes (background, padding, border-radius, etc.) */
+    background-color: #000 !important; /* Force la couleur noire */
+    color: #fff !important;            /* Force la couleur blanche */
+    text-decoration: none;             /* Enlève le soulignement */
+    padding: 8px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-/* Optionnel : si tu veux changer l'apparence au survol */
 .btn-cta:hover {
+    opacity: 0.8;
     text-decoration: none;
-    opacity: 0.9;
 }
