@@ -37,6 +37,52 @@ body {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    /* On réduit la largeur de la barre pour qu'elle ne touche pas les bords */
+    .navbar {
+        width: 95%;
+        top: 10px;
+    }
+
+    .nav-container {
+        padding: 6px 10px; /* On réduit l'espace interne */
+        gap: 5px;
+    }
+
+    /* On cache le nom "Laurent DUONG" pour ne garder que l'avatar */
+    /* Cela évite que le texte ne pousse les autres éléments dehors */
+    .nav-profile span {
+        display: none;
+    }
+
+    /* On réduit l'espace entre les liens (Accueil, Projets, etc) */
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 11px; /* Texte plus petit pour que tout tienne sur une ligne */
+        padding: 4px 2px;
+    }
+
+    /* Adaptation du bouton CV */
+    .btn-cta {
+        padding: 6px 10px;
+        font-size: 10px;
+        white-space: nowrap; /* Empêche le texte du bouton de revenir à la ligne */
+    }
+}
+
+/* --- OPTIMISATION POUR TRES PETITS ECRANS (iPhone SE, etc.) --- */
+@media (max-width: 380px) {
+    .nav-links {
+        gap: 5px;
+    }
+    
+    .nav-links a {
+        font-size: 10px;
+    }
+}
 .nav-profile { display: flex; align-items: center; gap: 10px; font-weight: 600; }
 .avatar-placeholder { width: 30px; height: 30px; background: #ddd; border-radius: 50%; }
 

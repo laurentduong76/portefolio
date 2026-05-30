@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portefolio Laurent DUONG</title>
+    <link rel="stylesheet" href="assets/css/aPropos.css"> <title>Contact - Laurent DUONG</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -17,27 +17,62 @@
          </div>
          <ul class="nav-links">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="work.html">Projet</a></li>
+            <li><a href="work.html">Projets</a></li>
             <li><a href="aPropos.html">A Propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
          </ul>
          <a href="assets/docs/LaurentCV.pdf" download="CV_Laurent_DUONG.pdf" class="btn-cta">Mon CV</a>
       </div>
    </nav>
 
-   <main>
-      <section class="hero">
-        <h1>Let's <span class="muted">connect.</span></h1>
-        <p>Ready to start a project? Drop me a message below.</p>
+   <main class="container">
+      <section class="hero" style="padding-bottom: 20px;">
+        <h1>Restons en <span class="muted">contact.</span></h1>
+        <p>N'hésitez pas à me contacter directement par e-mail, téléphone ou via mes réseaux sociaux.</p>
       </section>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Tell me about your project"></textarea>
-        <button type="submit" class="btn-main">Send Message</button>
-      </form>
+
+      <section class="skills-preview" style="max-width: 800px; margin: 0 auto 100px;">
+         <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+            
+            <a href="tel:+33613927465" class="skill-card" style="text-decoration: none; color: inherit;">
+                <div class="skill-icon"><i data-lucide="phone"></i></div>
+                <div class="skill-info">
+                    <h3>Téléphone</h3>
+                    <p>06 13 92 74 65</p>
+                </div>
+            </a>
+
+            <a href="mailto:laurent.duong76@gmail.com" class="skill-card" style="text-decoration: none; color: inherit;">
+                <div class="skill-icon"><i data-lucide="mail"></i></div>
+                <div class="skill-info">
+                    <h3>Email</h3>
+                    <p>laurent.duong76@gmail.com</p>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/laurentduong" target="_blank" class="skill-card" style="text-decoration: none; color: inherit;">
+                <div class="skill-icon"><i data-lucide="linkedin"></i></div>
+                <div class="skill-info">
+                    <h3>LinkedIn</h3>
+                    <p>laurent duong</p>
+                </div>
+            </a>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i data-lucide="map-pin"></i></div>
+                <div class="skill-info">
+                    <h3>Localisation</h3>
+                    <p>Amiens, France</p>
+                </div>
+            </div>
+
+         </div>
+      </section>
    </main>
 
-   <script src="/assets/js/script.js"></script>
+   <script src="assets/js/script.js"></script>
+   <script>
+       lucide.createIcons();
+   </script>
 </body>
 </html>
