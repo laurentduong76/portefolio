@@ -38,42 +38,37 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* On réduit la largeur de la barre pour qu'elle ne touche pas les bords */
     .navbar {
         width: 95%;
         top: 10px;
     }
 
     .nav-container {
-        padding: 6px 10px; /* On réduit l'espace interne */
+        padding: 6px 10px;
         gap: 5px;
     }
 
-    /* On cache le nom "Laurent DUONG" pour ne garder que l'avatar */
-    /* Cela évite que le texte ne pousse les autres éléments dehors */
     .nav-profile span {
         display: none;
     }
 
-    /* On réduit l'espace entre les liens (Accueil, Projets, etc) */
     .nav-links {
         gap: 8px;
     }
 
     .nav-links a {
-        font-size: 11px; /* Texte plus petit pour que tout tienne sur une ligne */
+        font-size: 11px;
         padding: 4px 2px;
     }
 
-    /* Adaptation du bouton CV */
+    
     .btn-cta {
         padding: 6px 10px;
         font-size: 10px;
-        white-space: nowrap; /* Empêche le texte du bouton de revenir à la ligne */
+        white-space: nowrap;
     }
 }
 
-/* --- OPTIMISATION POUR TRES PETITS ECRANS (iPhone SE, etc.) --- */
 @media (max-width: 380px) {
     .nav-links {
         gap: 5px;
@@ -92,7 +87,6 @@ body {
 
 .btn-cta { background: #000; color: #fff; border: none; padding: 8px 20px; border-radius: 50px; cursor: pointer; }
 
-/* Hero Section */
 .hero {
     padding: 150px 20px 60px;
     text-align: center;
@@ -132,7 +126,6 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
 
 .btn-main:hover { transform: scale(1.05); }
 
-/* Preview Image */
 .preview { padding: 40px 20px; display: flex; justify-content: center; }
 .main-card {
     max-width: 900px;
@@ -144,7 +137,6 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
 }
 .main-card img { width: 100%; display: block; } 
 
-/* Layout Global About */
 .about-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -223,7 +215,6 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
     margin: 5px 0;
 }
 
-/* Tags de compétences */
 .skills-tags {
     display: flex;
     flex-wrap: wrap;
@@ -240,7 +231,6 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
     font-weight: 500;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .about-grid, .details-grid {
         grid-template-columns: 1fr;
@@ -249,7 +239,7 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
     .about-text h1 { font-size: 40px; }
 }
 
-/* Grille de projets simple */
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -258,7 +248,7 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
     margin-bottom: 10px;
 }
 
-/* Formulaire de contact */
+
 .contact-form {
     max-width: 500px;
     margin: 0 auto 100px;
@@ -277,18 +267,18 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
 
 .contact-form textarea { height: 150px; }
 
-/* --- Nouveaux styles pour les Skill Boxes --- */
+
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crée des colonnes automatiques */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     max-width: 900px;
     margin: 40px auto;
 }
 
 .skill-card {
-    background: #fff; /* Fond gris très foncé */
-    border: 1px solid var(--border); /* Bordure discrète */
+    background: #fff; 
+    border: 1px solid var(--border); 
     border-radius: 12px;
     padding: 20px;
     display: flex;
@@ -303,7 +293,7 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
 }
 
 .skill-card:hover {
-    border-color: #10b981; /* La couleur verte de ton point "dot" au survol */
+    border-color: #10b981;
     transform: translateY(-2px);
 }
 
@@ -314,7 +304,7 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
 }
 
 .skill-image img {
-    width: 50px; /* Taille ajustable selon tes besoins */
+    width: 50px; 
     height: 50px;
     object-fit: contain;
     border-radius: 4px;
@@ -338,11 +328,11 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
     gap: 15px;
 }
 
-/* Styles pour le bouton CV dans la navbar */
+
 .btn-cta {
-    background-color: #000 !important; /* Force la couleur noire */
-    color: #fff !important;            /* Force la couleur blanche */
-    text-decoration: none;             /* Enlève le soulignement */
+    background-color: #000 !important; 
+    color: #fff !important;            
+    text-decoration: none;           
     padding: 8px 20px;
     border-radius: 50px;
     display: inline-block;

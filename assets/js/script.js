@@ -1,4 +1,4 @@
-// Initialisation des icônes (si tu en ajoutes plus tard)
+// Initialisation des icônes
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
